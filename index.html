@@ -24,9 +24,7 @@
 
         .flex-container{
             display: flex;
-            background-color: #006A6A;
             justify-content: space-around;
-            padding: 20px;
         }
 
         .header-title{
@@ -41,6 +39,56 @@
             font-size: 19px ;
             margin-bottom: 15px;
             font-weight: 500;
+        }
+
+        .col1{
+            background-color:#006B6B ;
+            width: 50%;
+            padding: 20px;
+            color: #FFFFFF;
+
+        }
+
+        .col2{
+            background-color:#008C8B ;
+            width: 50%;
+            padding: 20px;
+            color: #FFFFFF;
+        }
+
+        .subscription-title{
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .price{
+            font-size: 20px;
+            font-weight:700;
+        }
+
+        .month{
+            font-size: 15px;
+            font-style: italic;
+            margin-left: 15px;
+        }
+
+        .button-assine{
+        width: 100%;
+        padding: 15px 15px;
+        color: #006B6B;
+        font-size: 16px;
+        border-radius: 4px;
+        border: none;
+        background-color: #CCCCCC;
+        margin-top: 20px;
+        cursor: pointer;
+
+        }
+
+        .button-assine:hover{
+            background-color:#E9E9E9
+
         }
 
     </style>
@@ -62,12 +110,28 @@
             </div>
 
         </div>
-        <div class="flex-container">
+        <div class="flex-container" >
+            
+            <div class="col1">
+            <div class="subscription-title">Assinatura mensal:</div> 
             <div>
-            segunda linha - coluna 1
+                <span class="price">R$ 99,99</span>
+                <span class="month">por mês.</span>
+            </div> 
+            <div>Cancele a qualquer momento. </div> 
+            <button class="button-assine">Assine Agora</button>
             </div>
-            <div>
-            segunda linha - coluna 2
+            
+            <div class="col2">
+            Você terá acesso: <br>
+            <ul>
+                <li>Projetos exclusivos</li>
+                <li>Tutoriais</li>
+                <li>Lives semanais</li>
+                <li>Material didático espeializado</li>
+                <li>Fórum</li>
+                <li>Ofertas de empregos</li>
+            </ul>    
             </div>
         </div>
     </div>
